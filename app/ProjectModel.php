@@ -6,5 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class ProjectModel extends Model
 {
-    //
+    protected $table = 'projects';
+    protected $primaryKey = 'id';
+    public $incrementing = true;
+    protected $keyType = 'int';
+    public $timestamps = false;
 }
