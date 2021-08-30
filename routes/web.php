@@ -13,3 +13,4 @@
 
 $router->get('/chartdata', 'ChartDataController@onAllSelect');
 $router->get('/clientreview', 'ClientReviewController@onAllSelect');
+$router->post('/sendcontact', 'ContactController@addContactForm');
