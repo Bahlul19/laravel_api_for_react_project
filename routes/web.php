@@ -12,3 +12,4 @@
 */
 
 $router->get('/chartdata', 'ChartDataController@onAllSelect');
+$router->get('/clientreview', 'ClientReviewController@onAllSelect');

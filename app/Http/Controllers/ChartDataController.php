@@ -7,7 +7,7 @@ use App\ChartDataModel;
 
 class ChartDataController extends Controller
 {
-    function onAllSelect()
+    public function onAllSelect()
     {
         $result = ChartDataModel::all();
         return $result;
