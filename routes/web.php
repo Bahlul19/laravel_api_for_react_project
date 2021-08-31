@@ -25,3 +25,6 @@ $router->get('/footer', 'FooterController@onSelectAll');
 
 //Information
 $router->get('/information', 'InformationController@onSelectAll');
+
+//Services
+$router->get('/services', 'ServiceController@onSelectAll');
