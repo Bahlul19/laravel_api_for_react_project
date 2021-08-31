@@ -22,3 +22,6 @@ $router->post('/coursedetails', 'CoursesController@onSelectDetails');
 
 //Footer Router
 $router->get('/footer', 'FooterController@onSelectAll');
+
+//Information
+$router->get('/information', 'InformationController@onSelectAll');
