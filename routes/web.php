@@ -28,3 +28,8 @@ $router->get('/information', 'InformationController@onSelectAll');
 
 //Services
 $router->get('/services', 'ServiceController@onSelectAll');
+
+//Project Router
+$router->get('/projecthome', 'ProjectController@onSelectHome');
+$router->get('/allprojects', 'ProjectController@onSelectAll');
+$router->post('/projectdetail', 'ProjectController@onSelectDetails');
