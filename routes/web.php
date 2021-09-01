@@ -33,3 +33,6 @@ $router->get('/services', 'ServiceController@onSelectAll');
 $router->get('/projecthome', 'ProjectController@onSelectHome');
 $router->get('/allprojects', 'ProjectController@onSelectAll');
 $router->post('/projectdetail', 'ProjectController@onSelectDetails');
+
+//VideoHome Rouer
+$router->get('/video-home', 'VideoController@onSelect');
