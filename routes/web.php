@@ -34,10 +34,8 @@ $router->get('/projecthome', 'ProjectController@onSelectHome');
 $router->get('/allprojects', 'ProjectController@onSelectAll');
 $router->post('/projectdetail', 'ProjectController@onSelectDetails');
 
-//VideoHome Rouer
-$router->get('/video-home', 'VideoController@onSelectAll');
-
-//total project and client
-$router->get('/total-project-and-client', 'TotalClientController@onSelectAll');
-$router->get('/technology', 'TechnologyController@onSelectAll');
-$router->get('/home-top-title', 'HomeTopTitleController@onSelectAll');
+//Home Rouer
+$router->get('/video-home', 'HomeSectionController@onSelectVideo');
+$router->get('/total-project-and-client', 'HomeSectionController@onSelectClientProject');
+$router->get('/technology', 'HomeSectionController@onSelectTechnology');
+$router->get('/home-top-title', 'HomeSectionController@onSelectHomeTopSection');
