@@ -38,4 +38,5 @@ $router->post('/projectdetail', 'ProjectController@onSelectDetails');
 $router->get('/video-home', 'HomeSectionController@onSelectVideo');
 $router->get('/total-project-and-client', 'HomeSectionController@onSelectClientProject');
 $router->get('/technology', 'HomeSectionController@onSelectTechnology');
-$router->get('/home-top-title', 'HomeSectionController@onSelectHomeTopSection');
+// $router->get('/home-top-title', ['middleware' => 'auth','uses' => 'HomeSectionController@onSelectHomeTopSection']);
+$router->get('/home-top-title','HomeSectionController@onSelectHomeTopSection');
